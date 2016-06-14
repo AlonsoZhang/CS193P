@@ -19,7 +19,7 @@ Model里引用import Foundation，永远不要import UIKit。
 ![](images/MVC_model.png)
 
 
-target - action = @IBAction .... 告知I was touched
+target - action = @IBAction 
 
 delegate : Zoom/ Scroll (set via protocol), View 同时其自身不能拥有data，应该是controller来告知的。 
 
@@ -35,6 +35,8 @@ Model是UI independent, Model 的 data变化，比如model是代表internet 某�
 ![](images/multi-mvc.png)
 
 一个MVC serve as part of view as other MVC， 同时，一个MVC是别的MVC的部分.
+
+
 
 #### 各种 property
 
@@ -114,7 +116,6 @@ Swift 跟其他语言不同之处，也是其强大之处在于其可以有assoc
 然后enum可以有associated values, optional 有 assocated values，其实，所有的enum都有associated vaule.
 
 
-
 <https://developer.apple.com/library/ios/documentation/Swift/Conceptual/Swift_Programming_Language/Enumerations.html>
 
 ##### closure
@@ -123,9 +124,9 @@ inline function，但是能捕捉其周围的变量
 
 closure的基本写法其实就是类似于function，不过是inline，大括号包裹函数所有部分：{ 参数部分 in 函数部分 }
 
-
 然后可以利用Swift的infer技术以及它默认参数，进一步简化。
 
+所有类型都要大写 ，局部变量和变量的第一个字母小写。
 
 * Class
 * Dictionary
@@ -135,18 +136,8 @@ closure的基本写法其实就是类似于function，不过是inline，大括�
 * Closure
 
 
+结构体是按值传递的，类是按引用传递的。
+
 Struct 跟 Class 的区别是Struct 是 pass by value（跟enum一样,在stack上,copy）， class 则是pass by reference （在 heap，其实pass的是指针）.
 
 pass by value ： array， double， int ，string 都是pass by value的，array这个有点难想到.
-
-
-
-
-
-
-甚至还来了AutoLayout的constraint部分.
-这就是第二课，速度简直了.
-
-
-
-
