@@ -2,6 +2,16 @@
 
 #### Optional
 
+一个Optional值和非Optional值的区别就在于：Optional值未经初始化虽然为nil，但普通变量连nil都没有。
+
+```
+//未被初始化，但是是一个Optional类型，为nil
+var str: String?
+str //输出nil
+//未被初始化，也不是Optional类型
+var str2: String
+str2 //使用时出错
+```
 Optional is an enum：
 
 
@@ -215,3 +225,39 @@ Used to save/restore/transmit raw data throughout the iOS SDK.
 #### Initialization
 
 
+#### AnyObject 
+
+* AnyObject可以代表任何class类型的实例。
+* Any可以表示任何类型，除了方法类型(function types)。
+
+```
+let ao: AnyObject = ...if let foo = ao as? SomeClass {// we can use foo and know that it is of type SomeClass in here}
+```
+#### Property List
+
+String, Array, Dictionary, a number (Double, Int, etc.), NSData, NSDate
+
+#### NSUserDefaults
+
+NSUserDefaults is essentially a very tiny database that stores Propery List data.
+
+用来存plist，就是一些简单的用户设置
+
+```
+let defaults = NSUserDefaults.standardUserDefaults()
+let plist = defaults.objectForKey(“foo”)defaults.setObject(plist, forKey: “foo”)
+```
+
+Your changes will be automatically saved.
+
+But you can be sure they are saved at any time by synchronizing.
+
+#### Cast
+
+类型转换 可以判断实例的类型，也可以将实例看做是其父类或者子类的实例。
+
+类型转换在 Swift 中使用 is 和 as 操作符实现。这两个操作符提供了一种简单达意的方式去检查值的类型或者转换它的类型。
+
+#### Assertion
+
+和if的作用相似,判断条件 都是判断一个Bool的表达式, 不过if判断失败最多不会去执行部分代码, 断言(assertion)判断失败的话,不仅仅是不执行代码, 并且还会抛出异常。
