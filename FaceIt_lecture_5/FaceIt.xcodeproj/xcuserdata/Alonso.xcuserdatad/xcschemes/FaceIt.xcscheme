@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E2F8054D1D74816A00625FC9"
-               BuildableName = "example_lecture_4.app"
-               BlueprintName = "example_lecture_4"
-               ReferencedContainer = "container:example_lecture_4.xcodeproj">
+               BlueprintIdentifier = "E2EB47131D23A71D008075C3"
+               BuildableName = "FaceIt.app"
+               BlueprintName = "FaceIt"
+               ReferencedContainer = "container:FaceIt.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,10 +32,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E2F8054D1D74816A00625FC9"
-            BuildableName = "example_lecture_4.app"
-            BlueprintName = "example_lecture_4"
-            ReferencedContainer = "container:example_lecture_4.xcodeproj">
+            BlueprintIdentifier = "E2EB47131D23A71D008075C3"
+            BuildableName = "FaceIt.app"
+            BlueprintName = "FaceIt"
+            ReferencedContainer = "container:FaceIt.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -55,10 +55,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E2F8054D1D74816A00625FC9"
-            BuildableName = "example_lecture_4.app"
-            BlueprintName = "example_lecture_4"
-            ReferencedContainer = "container:example_lecture_4.xcodeproj">
+            BlueprintIdentifier = "E2EB47131D23A71D008075C3"
+            BuildableName = "FaceIt.app"
+            BlueprintName = "FaceIt"
+            ReferencedContainer = "container:FaceIt.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -74,10 +74,10 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E2F8054D1D74816A00625FC9"
-            BuildableName = "example_lecture_4.app"
-            BlueprintName = "example_lecture_4"
-            ReferencedContainer = "container:example_lecture_4.xcodeproj">
+            BlueprintIdentifier = "E2EB47131D23A71D008075C3"
+            BuildableName = "FaceIt.app"
+            BlueprintName = "FaceIt"
+            ReferencedContainer = "container:FaceIt.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

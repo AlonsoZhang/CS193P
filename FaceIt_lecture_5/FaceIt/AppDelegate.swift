@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  example_lecture_4
+//  FaceIt
 //
-//  Created by Alonso Zhang on 16/8/29.
+//  Created by Alonso Zhang on 16/6/29.
 //  Copyright © 2016年 Alonso Zhang. All rights reserved.
 //
 
