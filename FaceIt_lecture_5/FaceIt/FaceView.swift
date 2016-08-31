@@ -83,27 +83,15 @@ class FaceView: UIView {
     private func pathForEye(eye: Eye) -> UIBezierPath{
         let eyeRadius = skullRadius / Ratios.SkullRadiusToEyeRadius
         let eyeCenter = getEyeCenter(eye)
-        if eyesOpen{
-            return pathForCicleCenteredAtPoint(eyeCenter, withRadius: eyeRadius)
-        }else{
-            var tilt = eyeBrowTilt
-            switch eye {
-            case .Left: tilt *= -1.0
-            case .Right: break
-            }
-            var browCenter = getEyeCenter(eye)
-            browCenter.y -= skullRadius / Ratios.SkullRadiusToBrowOffset
-            let eyeRadius = skullRadius / Ratios.SkullRadiusToEyeRadius
-            let tiltOffset = CGFloat(max(-1, min(tilt, 1))) * eyeRadius / 2
-            let browStart = CGPoint(x: browCenter.x - eyeRadius, y: browCenter.y - tiltOffset)
-            let browEnd = CGPoint(x: browCenter.x + eyeRadius, y: browCenter.y + tiltOffset)
+        if eyesOpen {
+            return pathForCircleCenteredAtPoint(eyeCenter, withRadius: eyeRadius)
+        } else {
             let path = UIBezierPath()
-            path.moveToPoint(browStart)
-            path.addLineToPoint(browEnd)
+            path.moveToPoint(CGPoint(x: eyeCenter.x - eyeRadius, y: eyeCenter.y))
+            path.addLineToPoint(CGPoint(x: eyeCenter.x + eyeRadius, y: eyeCenter.y))
             path.lineWidth = lineWidth
             return path
         }
-        
     }
     
     override func drawRect(rect: CGRect) {
